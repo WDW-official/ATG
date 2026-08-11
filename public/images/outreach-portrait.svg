@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+    <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ece8de"/><stop offset="1" stop-color="#b9ae9b"/></linearGradient></defs>
+    <rect width="1000" height="800" fill="url(#bg)"/><circle cx="400" cy="220" r="85" fill="#6b4938"/><ellipse cx="400" cy="590" rx="260" ry="300" fill="#b19368"/><path d="M310 210q90-135 180 0v60H310z" fill="#49372e"/>
+    <g fill="#fff" opacity=".25"><ellipse cx="180" cy="120" rx="150" ry="35"/><ellipse cx="760" cy="100" rx="180" ry="42"/></g>
+    <text x="40" y="755" fill="#f8f4eb" font-family="Arial" font-size="18" letter-spacing="4">ATG PORTRAIT</text></svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+    <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ece8de"/><stop offset="1" stop-color="#b9ae9b"/></linearGradient></defs>
+    <rect width="1000" height="800" fill="url(#bg)"/><circle cx="710" cy="230" r="65" fill="#6f4e3d"/><ellipse cx="710" cy="580" rx="230" ry="280" fill="#9d7b55"/><path d="M640 230q70-100 140 0v45H640z" fill="#4b3930"/>
+    <g fill="#fff" opacity=".25"><ellipse cx="180" cy="120" rx="150" ry="35"/><ellipse cx="760" cy="100" rx="180" ry="42"/></g>
+    <text x="40" y="755" fill="#f8f4eb" font-family="Arial" font-size="18" letter-spacing="4">ATG OUTREACH HERO</text></svg>
