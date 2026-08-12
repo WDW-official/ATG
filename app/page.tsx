@@ -1,4 +1,6 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { ATG_LOGO_URL } from "@/lib/brand";
 
 const work = [
   ["01", "Humanitarian Outreach", "Practical support that meets people where they are."],
@@ -17,8 +19,8 @@ export default function HomePage() {
         <div className="cloud cloudOne" />
         <div className="cloud cloudTwo" />
         <div className="heroCopy">
-          <p className="eyebrow">A Thousand Generation</p>
-          <h1>Light in a<br/><span>dark world.</span></h1>
+          {/* <p className="eyebrow">A Thousand Generation</p> */}
+          <h1><span>Light in a<br/>dark world.</span></h1>
           <div className="goldRule" />
           <p className="heroLead">Honouring lives. Sharing kindness. Connecting generations.</p>
           <p className="heroBody">
@@ -76,7 +78,7 @@ export default function HomePage() {
               <a className="workRow group" href="/programmes" key={n}>
                 <span className="workNo">{n}</span>
                 <span className="workText"><strong>{title}</strong><small>{copy}</small></span>
-                <span className="workArrow transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">↗</span>
+                <span className="workArrow transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
               </a>
             ))}
           </div>
@@ -147,14 +149,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <footer>
-        <a className="brand footerBrand" href="/">
-          <img src="/images/atg-mark.svg" alt="" className="brandMark" />
-          <span><strong>A Thousand</strong><em>Generation</em></span>
-        </a>
-        <p>Choose kindness. Lead with compassion. Be the difference.</p>
-        <span className="footerMeta">© 2026 A Thousand Generation</span>
-      </footer>
+      <Footer />
     </main>
   );
 }

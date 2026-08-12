@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { openInvolvementModal } from "@/components/InvolvementModals";
+import { ATG_LOGO_URL } from "@/lib/brand";
 import { usePathname } from "next/navigation";
 import type { CSSProperties } from "react";
 import { useState } from "react";
@@ -29,8 +30,8 @@ export default function Header() {
   return (
     <header className="siteHeader motion-safe:animate-[hero-rise_.55s_ease-out_both]">
       <Link className="brand" href="/" aria-label="A Thousand Generation home" onClick={() => setIsOpen(false)}>
-        <img src="/images/atg-mark.svg" alt="" className="brandMark" />
-        <span><strong>A Thousand</strong><em>Generation</em></span>
+        <img src={ATG_LOGO_URL} alt="" className="brandMark" />
+        <span><em><strong>A Thousand<br/> Generation</strong></em></span>
       </Link>
       <nav className="desktopNav" aria-label="Primary">
         {navItems.map(([label, href]) => (

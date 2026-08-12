@@ -1,8 +1,17 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Link from "next/link";
+import { BadgeCheck, CirclePlus, HandHeart, HeartHandshake, ShieldCheck, Sparkles, UsersRound, type LucideIcon } from "lucide-react";
 
-const values = ["Kindness","Dignity","Empathy","Community","Inclusion","Integrity","Legacy"];
+const values: { label: string; Icon: LucideIcon }[] = [
+  { label: "Kindness", Icon: HeartHandshake },
+  { label: "Dignity", Icon: ShieldCheck },
+  { label: "Empathy", Icon: HandHeart },
+  { label: "Community", Icon: UsersRound },
+  { label: "Inclusion", Icon: CirclePlus },
+  { label: "Integrity", Icon: BadgeCheck },
+  { label: "Legacy", Icon: Sparkles },
+];
 
 export default function AboutPage() {
   return (
@@ -26,7 +35,7 @@ export default function AboutPage() {
           <h2>Light in a<br/>dark world.</h2>
         </div>
         <div className="readingColumn">
-          <p>A Thousand Generations (ATG) is a movement of compassion, dedicated to spreading kindness through practical and human-centred action.</p>
+          <p>A Thousand Generation (ATG) is a movement of compassion, dedicated to spreading kindness through practical and human-centred action.</p>
           <p>A Thousand Generation Network for Humanitarian and Social Advancement is a non-profit, non-governmental organization established to promote compassion-driven humanitarian action, social development, and community empowerment.</p>
           <p>We inspire individuals and communities to lead with empathy, take collective responsibility, and build a society where people of all ages are supported, connected, and empowered.</p>
         </div>
@@ -47,7 +56,13 @@ export default function AboutPage() {
       <section className="valuesSection sectionPad">
         <p className="eyebrow">Our core values</p>
         <div className="valueGrid">
-          {values.map((value, i) => <div className="valueCell" key={value}><span>0{i+1}</span><strong>{value}</strong></div>)}
+          {values.map(({ label, Icon }, i) => (
+            <div className="valueCell" key={label}>
+              <span>0{i+1}</span>
+              <Icon aria-hidden="true" strokeWidth={2.8} />
+              <strong>{label}</strong>
+            </div>
+          ))}
         </div>
       </section>
 

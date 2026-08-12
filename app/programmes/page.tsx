@@ -35,7 +35,7 @@ export default function ProgrammesPage() {
           <h2>Action with<br/>human connection.</h2>
         </div>
         <div className="pillarList">
-          {pillars.map(([n,t]) => <div className="pillar" key={n}><span>{n}</span><strong>{t}</strong><b>↗</b></div>)}
+          {pillars.map(([n,t]) => <div className="pillar" key={n}><span>{n}</span><strong>{t}</strong></div>)}
         </div>
       </section>
 

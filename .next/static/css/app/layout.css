@@ -208,10 +208,6 @@
       --tw-translate-x: var(--spacing);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
-    .group-hover\:-translate-y-1:is(:where(.group):hover *) {
-      --tw-translate-y: calc(var(--spacing) * -1);
-      translate: var(--tw-translate-x) var(--tw-translate-y);
-    }
     .hover\:-translate-y-0\.5:hover {
       --tw-translate-y: calc(var(--spacing) * -0.5);
       translate: var(--tw-translate-x) var(--tw-translate-y);
@@ -418,8 +414,9 @@ img {
   width: max-content;
 }
 .brandMark {
-  width: 34px;
-  height: 42px;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
 }
 .brand span {
   display: flex;
@@ -780,6 +777,7 @@ img {
   position: relative;
   overflow: hidden;
   background: #ddd8ce;
+  border-radius: 8px;
 }
 .introText {
   font-size: 15px;
@@ -869,6 +867,8 @@ img {
 .workArrow {
   justify-self: end;
   color: var(--gold);
+  font-size: 18px;
+  line-height: 1;
 }
 .belief {
   min-height: 680px;
@@ -1461,20 +1461,34 @@ footer>p {
   border-left: 1px solid var(--line);
 }
 .valueCell {
-  min-height: 170px;
+  min-height: 190px;
   padding: 25px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: background .25s ease,color .25s ease;
 }
 .valueCell span {
   font-size: 9px;
   color: #aa9a7a;
 }
+.valueCell svg {
+  width: 42px;
+  height: 42px;
+  color: var(--gold);
+  margin: 18px 0 26px;
+}
 .valueCell strong {
   font: 400 26px Georgia,serif;
+}
+.valueCell:hover {
+  background: #111;
+  color: #fff;
+}
+.valueCell:hover span,.valueCell:hover svg {
+  color: var(--gold);
 }
 .pageCTA {
   min-height: 520px;
@@ -1771,8 +1785,9 @@ footer>p {
 }
 .benefitGrid strong {
   display: block;
-  font: 400 26px Georgia,serif;
+  font: 700 22px Arial,Helvetica,sans-serif;
   margin: 45px 0 14px;
+  letter-spacing: .01em;
 }
 .benefitGrid p {
   font-size: 12px;
@@ -1955,8 +1970,9 @@ footer>p {
   color: #9d8d6c;
 }
 .involveCard h2 {
-  font: 400 54px Georgia,serif;
+  font: 700 44px Arial,Helvetica,sans-serif;
   margin: 75px 0 20px;
+  letter-spacing: .01em;
 }
 .involveCard p {
   font-size: 13px;
@@ -2062,8 +2078,8 @@ footer>p {
   outline-offset: 4px;
 }
 .floatingWhatsApp img {
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 .compactForm {
