@@ -34,7 +34,7 @@ export default function HomePage() {
         </div>
 
         <div className="heroImageWrap shadow-2xl shadow-black/10 transition-transform duration-700 hover:scale-[1.015]">
-          <img className="heroImage uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786441360/Hero_picture_xgpubz.jpg" alt="ATG outreach moment" />
+          <img className="heroImage uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576898/ATG_Art_Therapy_kaukkk.svg" alt="ATG outreach moment" />
           <div className="imageFallback heroFallback" aria-hidden="true"/>
           <div className="imageCaption"><span>01</span> Dignity, always.</div>
         </div>
@@ -48,7 +48,7 @@ export default function HomePage() {
           <h2>Every life<br/>carries a story.</h2>
         </div>
         <div className="introPortrait">
-          <img className="uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786418485/ATG6_s5cl4x.jpg" alt="ATG golden generation community moment" />
+          <img className="uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576899/ATG_Medical_Outreach_qinq2l.svg" alt="ATG golden generation community moment" />
           <div className="imageFallback portraitFallback" aria-hidden="true"/>
         </div>
         <div className="introText">

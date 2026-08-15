@@ -24,7 +24,7 @@ export default function AboutPage() {
           <p>A movement built on the belief that intentional kindness can create lasting social transformation.</p>
         </div>
         <div className="innerHeroMedia">
-          <img src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786418484/ATG4_z7sp1t.jpg" alt="ATG community outreach portrait" />
+          <img src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576900/ATG_Volunteer_Preparation_etgt4y.svg" alt="ATG community outreach portrait" />
           <span>Humanity / Dignity / Legacy</span>
         </div>
       </section>
