@@ -11,7 +11,7 @@ export default function VolunteerPage() {
           <h1>Kindness<br/><em>needs people.</em></h1>
           <p>Volunteers are the heart of what we do. Give your time, skills and compassion to create moments of dignity, connection and hope.</p>
         </div>
-        <div className="innerHeroMedia"><img src="/images/outreach-hero.svg" alt="ATG volunteer outreach" /><span>Time / Skills / Compassion</span></div>
+        <div className="innerHeroMedia"><img src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576898/ATG_Medical_Community_Outreach_ngysru.svg" alt="ATG medical community outreach" /><span>Time / Skills / Compassion</span></div>
       </section>
 
       <section className="volunteerBenefits sectionPad">
@@ -43,7 +43,7 @@ export default function VolunteerPage() {
           <label>Phone number<input name="phone" placeholder="+234..." /></label>
           <label>How would you like to help?<select name="interest" defaultValue=""><option value="" disabled>Select an area</option><option>Humanitarian outreach</option><option>Youth & education</option><option>Elderly care</option><option>Storytelling & creative support</option><option>General volunteering</option></select></label>
           <label className="fullField">Tell us a little about yourself<textarea name="message" rows={5} placeholder="Skills, availability, or what draws you to ATG..." /></label>
-          <button className="button buttonGold fullField" type="submit">Send volunteer interest</button>
+          <button className="button buttonGold fullField" type="submit" data-mobile-label="Send">Send volunteer interest</button>
         </form>
       </section>
       <Footer />

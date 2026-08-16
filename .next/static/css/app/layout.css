@@ -280,6 +280,10 @@ a {
 }
 img {
   display: block;
+  border-radius: 8px;
+}
+video,.heroImageWrap,.introPortrait,.workImage,.beliefArt,.innerHeroMedia,.programmeImage,.programmeMediaItem,.impactGallery figure,.storyGrid figure {
+  border-radius: 8px;
 }
 @keyframes hero-rise {
   from {
@@ -417,6 +421,7 @@ img {
   width: 46px;
   height: 46px;
   object-fit: contain;
+  border-radius: 0;
 }
 .brand span {
   display: flex;
@@ -469,10 +474,12 @@ img {
   min-height: 47px;
   padding: 0 24px;
   border: 0;
+  border-radius: 16px;
   cursor: pointer;
   font: 700 11px Arial,Helvetica,sans-serif;
   text-transform: uppercase;
   letter-spacing: .12em;
+  white-space: nowrap;
 }
 .buttonGold {
   background: var(--gold);
@@ -1187,6 +1194,7 @@ footer>p {
     margin-top: 12px;
     background: var(--gold);
     border-top: 0;
+    border-radius: 16px;
     min-height: 52px;
     padding: 0 16px;
     font: 700 11px/1 Arial,Helvetica,sans-serif;
@@ -1339,6 +1347,14 @@ footer>p {
   }
 }
 @media (max-width:480px) {
+  .button[data-mobile-label] {
+    font-size: 0;
+  }
+  .button[data-mobile-label]:after {
+    content: attr(data-mobile-label);
+    font: 700 11px/1 Arial,Helvetica,sans-serif;
+    letter-spacing: .12em;
+  }
   .storyGrid,.programmeMediaGrid {
     grid-template-columns: 1fr;
   }
@@ -2084,9 +2100,9 @@ footer>p {
   color: #9d8d6c;
 }
 .involveCard h2 {
-  font: 700 44px Arial,Helvetica,sans-serif;
+  font: 400 54px Georgia,serif;
   margin: 75px 0 20px;
-  letter-spacing: .01em;
+  letter-spacing: -.035em;
 }
 .involveCard p {
   font-size: 13px;
@@ -2195,6 +2211,7 @@ footer>p {
   width: 42px;
   height: 42px;
   object-fit: contain;
+  border-radius: 0;
 }
 .compactForm {
   display: grid;

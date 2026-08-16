@@ -28,7 +28,7 @@ export default function HomePage() {
             valued and never forgotten.
           </p>
           <div className="heroActions">
-            <a className="button buttonGold transition-transform duration-300 hover:-translate-y-1" href="/get-involved">Support our work</a>
+            <a className="button buttonGold transition-transform duration-300 hover:-translate-y-1" href="/get-involved" data-mobile-label="Support">Support our work</a>
             <a className="textLink transition-colors duration-300 hover:text-[#9b7625]" href="/about">Discover ATG <span>→</span></a>
           </div>
         </div>

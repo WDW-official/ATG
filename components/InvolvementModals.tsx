@@ -117,7 +117,7 @@ function VolunteerForm() {
         <label>Phone number<input name="volunteer_phone" placeholder="+234..." /></label>
         <label>Area of interest<select name="volunteer_interest" defaultValue=""><option value="" disabled>Select one</option><option>Humanitarian outreach</option><option>Youth & education</option><option>Elderly care</option><option>Creative support</option><option>General volunteering</option></select></label>
         <label className="fullField">Availability<textarea name="volunteer_message" rows={4} placeholder="Tell us when and how you would like to serve." /></label>
-        <button className="button buttonGold fullField" type="submit">Register to volunteer</button>
+        <button className="button buttonGold fullField" type="submit" data-mobile-label="Volunteer">Register to volunteer</button>
       </form>
     </>
   );
@@ -137,7 +137,7 @@ function DonateForm() {
         <label>Phone number<input name="donor_phone" placeholder="+234..." /></label>
         <label>Support type<select name="donation_type" defaultValue=""><option value="" disabled>Select one</option><option>One-time donation</option><option>Monthly support</option><option>Relief materials</option><option>Medical supplies</option><option>Other support</option></select></label>
         <label className="fullField">Donation note<textarea name="donation_note" rows={4} placeholder="Amount, items, or the programme you want to support." /></label>
-        <button className="button buttonGold fullField" type="submit">Register donation interest</button>
+        <button className="button buttonGold fullField" type="submit" data-mobile-label="Donate">Register donation interest</button>
       </form>
     </>
   );
@@ -157,7 +157,7 @@ function PartnerForm() {
         <label>Organisation<input name="organisation" placeholder="Organisation name" /></label>
         <label>Partnership area<select name="partnership_area" defaultValue=""><option value="" disabled>Select one</option><option>Programme sponsorship</option><option>Community outreach</option><option>Medical partnership</option><option>Education & youth</option><option>Media & advocacy</option></select></label>
         <label className="fullField">Partnership idea<textarea name="partnership_note" rows={4} placeholder="Tell us what you would like to explore with ATG." /></label>
-        <button className="button buttonGold fullField" type="submit">Register partnership interest</button>
+        <button className="button buttonGold fullField" type="submit" data-mobile-label="Partner">Register partnership interest</button>
       </form>
     </>
   );

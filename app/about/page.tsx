@@ -69,7 +69,7 @@ export default function AboutPage() {
       <section className="pageCTA">
         <p className="eyebrow">A shared responsibility</p>
         <h2>Help kindness travel<br/><em>further.</em></h2>
-        <div><Link className="button buttonGold" href="/volunteer">Volunteer with us</Link><Link className="textLink" href="/programmes">Explore our work →</Link></div>
+        <div><Link className="button buttonGold" href="/volunteer" data-mobile-label="Volunteer">Volunteer with us</Link><Link className="textLink" href="/programmes">Explore our work →</Link></div>
       </section>
       <Footer />
     </main>

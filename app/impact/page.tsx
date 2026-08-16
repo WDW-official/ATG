@@ -8,6 +8,12 @@ const moments = [
   ["2025","Expanded Elderly Home Visit","Creating joyful, dignified experiences through activities, relief materials and monetary support."]
 ];
 
+const measureImages = [
+  {src:"https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576900/ATG_Joy_Companionship_jlarke.svg", alt:"Joy and companionship illustration"},
+  {src:"https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576900/ATG_Community_Outreach_xm9ygb.svg", alt:"Community outreach illustration"},
+  {src:"https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576900/ATG_Compassion_Companionship_xnv14n.svg", alt:"Compassion and companionship illustration"}
+];
+
 export default function ImpactPage() {
   return (
     <main>
@@ -40,9 +46,9 @@ export default function ImpactPage() {
       </section>
 
       <section className="impactGallery sectionPad">
-        <figure><img src="/images/outreach-portrait.svg" alt="Community portrait" /><figcaption>Seen.</figcaption></figure>
-        <figure><img src="/images/outreach-wide.svg" alt="Community programme" /><figcaption>Supported.</figcaption></figure>
-        <figure><img src="/images/outreach-hero.svg" alt="Outreach participant" /><figcaption>Valued.</figcaption></figure>
+        <figure><img src={measureImages[0].src} alt={measureImages[0].alt} /><figcaption>Seen.</figcaption></figure>
+        <figure><img src={measureImages[1].src} alt={measureImages[1].alt} /><figcaption>Supported.</figcaption></figure>
+        <figure><img src={measureImages[2].src} alt={measureImages[2].alt} /><figcaption>Valued.</figcaption></figure>
       </section>
 
       <section className="pageCTA">
