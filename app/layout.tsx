@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { GlobalInvolvementModalHost } from "@/components/InvolvementModals";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 import { ATG_LOGO_URL } from "@/lib/brand";
 import "./globals.css";
 
@@ -20,7 +19,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         {children}
         <GlobalInvolvementModalHost />
-        <FloatingWhatsApp />
       </body>
     </html>
   );

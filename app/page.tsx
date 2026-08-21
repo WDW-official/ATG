@@ -1,13 +1,13 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import CountUpStat from "@/components/CountUpStat";
 import { ATG_LOGO_URL } from "@/lib/brand";
 
 const work = [
   ["01", "Humanitarian Outreach", "Practical support that meets people where they are."],
-  ["02", "Education & Youth", "Helping the next generation grow with confidence and purpose."],
-  ["03", "Elderly Care", "Honouring older people with dignity, health support and companionship."],
-  ["04", "Volunteerism", "Turning goodwill into coordinated, useful action."],
-  ["05", "Advocacy & Storytelling", "Sharing human stories that create empathy and lasting change."]
+  ["02", "Elderly Care", "Honouring older people with dignity, health support and companionship."],
+  ["03", "Volunteerism", "Turning goodwill into coordinated, useful action."],
+  ["04", "Advocacy & Storytelling", "Sharing human stories that create empathy and lasting change."]
 ];
 
 export default function HomePage() {
@@ -36,7 +36,7 @@ export default function HomePage() {
         <div className="heroImageWrap shadow-2xl shadow-black/10 transition-transform duration-700 hover:scale-[1.015]">
           <img className="heroImage uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576898/ATG_Art_Therapy_kaukkk.svg" alt="ATG outreach moment" />
           <div className="imageFallback heroFallback" aria-hidden="true"/>
-          <div className="imageCaption"><span>01</span> Dignity, always.</div>
+          <div className="imageCaption"> Dignity, always.</div>
         </div>
         <div className="heroIndex">ATG / 001</div>
       </section>
@@ -104,9 +104,9 @@ export default function HomePage() {
           <h2>Care you can<br/>see and feel.</h2>
         </div>
         <div className="stats">
-          <div className="stat transition-colors duration-300 hover:bg-white/60"><strong>300</strong><span>Elderly people targeted through the 2026 Piwoyi outreach</span></div>
-          <div className="stat transition-colors duration-300 hover:bg-white/60"><strong>10</strong><span>Medical professionals supporting the programme</span></div>
-          <div className="stat transition-colors duration-300 hover:bg-white/60"><strong>5</strong><span>Field volunteers working alongside the team</span></div>
+          <div className="stat transition-colors duration-300 hover:bg-white/60"><CountUpStat value={300} suffix="+" /><span>Lives touched through acts of kindness</span></div>
+          <div className="stat transition-colors duration-300 hover:bg-white/60"><CountUpStat value={10000} suffix="+" /><span>More lives to reach, together</span></div>
+          <div className="stat transition-colors duration-300 hover:bg-white/60"><CountUpStat value={4} suffix="+" /><span>Generations connected through compassion and care</span></div>
         </div>
       </section>
 

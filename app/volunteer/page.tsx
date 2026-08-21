@@ -41,7 +41,7 @@ export default function VolunteerPage() {
           <label>Full name<input name="name" required placeholder="Your name" /></label>
           <label>Email address<input type="email" name="email" required placeholder="you@example.com" /></label>
           <label>Phone number<input name="phone" placeholder="+234..." /></label>
-          <label>How would you like to help?<select name="interest" defaultValue=""><option value="" disabled>Select an area</option><option>Humanitarian outreach</option><option>Youth & education</option><option>Elderly care</option><option>Storytelling & creative support</option><option>General volunteering</option></select></label>
+          <label>How would you like to help?<select name="interest" defaultValue=""><option value="" disabled>Select an area</option><option>Humanitarian outreach</option><option>Elderly care</option><option>Storytelling & creative support</option><option>General volunteering</option></select></label>
           <label className="fullField">Tell us a little about yourself<textarea name="message" rows={5} placeholder="Skills, availability, or what draws you to ATG..." /></label>
           <button className="button buttonGold fullField" type="submit" data-mobile-label="Send">Send volunteer interest</button>
         </form>

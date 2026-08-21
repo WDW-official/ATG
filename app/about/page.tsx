@@ -35,7 +35,8 @@ export default function AboutPage() {
           <h2>Light in a<br/>dark world.</h2>
         </div>
         <div className="readingColumn">
-          <p>A Thousand Generation (ATG) is a movement of compassion, dedicated to spreading kindness through practical and human-centred action.</p>
+          <p></p>
+          <p >A Thousand Generation (ATG) is a movement of compassion, dedicated to spreading kindness through practical and human centred action.</p>
           <p>A Thousand Generation Network for Humanitarian and Social Advancement is a non-profit, non-governmental organization established to promote compassion-driven humanitarian action, social development, and community empowerment.</p>
           <p>We inspire individuals and communities to lead with empathy, take collective responsibility, and build a society where people of all ages are supported, connected, and empowered.</p>
         </div>
@@ -68,7 +69,7 @@ export default function AboutPage() {
 
       <section className="pageCTA">
         <p className="eyebrow">A shared responsibility</p>
-        <h2>Help kindness travel<br/><em>further.</em></h2>
+        <h2>Help kindness <br/><em>travel further.</em></h2>
         <div><Link className="button buttonGold" href="/volunteer" data-mobile-label="Volunteer">Volunteer with us</Link><Link className="textLink" href="/programmes">Explore our work →</Link></div>
       </section>
       <Footer />
