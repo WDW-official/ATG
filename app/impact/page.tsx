@@ -5,7 +5,8 @@ import Link from "next/link";
 const moments = [
   ["2024","LVC Boot Camp for Teenagers","Equipping young people with leadership skills, values and confidence for life."],
   ["2024","Elderly Home Visit","Providing essential relief items, companionship and care."],
-  ["2025","Expanded Elderly Home Visit","Creating joyful, dignified experiences through activities, relief materials and monetary support."]
+  ["2025","Expanded Elderly Home Visit","Creating joyful, dignified experiences through activities, relief materials and monetary support."],
+  ["2026","Elderly Health & Wellness Initiative","Supporting older persons with health-focused care, wellness attention, companionship and practical encouragement."]
 ];
 
 const measureImages = [
@@ -24,7 +25,7 @@ export default function ImpactPage() {
           <h1>Lives touched.<br/><em>Moments remembered.</em></h1>
           <p>For ATG, impact is not only measured in numbers. It is also measured in dignity, connection and the quality of care people experience.</p>
         </div>
-        <div className="innerHeroMedia impactMedia"><img src="https://res.cloudinary.com/dzn1k1z8r/image/upload/f_auto,q_auto/v1786418484/Financial_Support_vgmj7u.heic" alt="ATG financial support moment" /><span>Care / Connection / Community</span></div>
+        <div className="innerHeroMedia impactMedia"><img src="https://res.cloudinary.com/dzn1k1z8r/image/upload/f_jpg,q_auto/v1786418484/Financial_Support_vgmj7u.heic" alt="ATG financial support moment" /><span>Care / Connection / Community</span></div>
       </section>
 
       <section className="timeline sectionPad">

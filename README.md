@@ -5,7 +5,7 @@ Responsive Next.js + TypeScript implementation of the ATG website using the supp
 ## Pages
 - `/` — editorial homepage
 - `/about` — Who We Are, Why We Care, Core Values
-- `/programmes` — What We Do + 2024/2025 programmes
+- `/programmes` — What We Do + 2024–2026 programmes
 - `/impact` — Impact in Action and programme timeline
 - `/volunteer` — volunteer benefits, eligibility and signup form
 - `/pledge` — Take the Pledge experience

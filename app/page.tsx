@@ -120,7 +120,7 @@ export default function HomePage() {
         </div>
         <div className="storyGrid">
           <figure className="storyLarge">
-            <img className="uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/f_auto,q_auto/v1786418484/Financial_Support_vgmj7u.heic" alt="Financial support moment at an ATG outreach" />
+            <img className="uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/f_jpg,q_auto/v1786418484/Financial_Support_vgmj7u.heic" alt="Financial support moment at an ATG outreach" />
             <div className="imageFallback wideFallback" aria-hidden="true"/>
             <figcaption>Community / Connection</figcaption>
           </figure>
