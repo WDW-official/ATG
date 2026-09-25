@@ -16,10 +16,17 @@ export default function HomePage() {
       <Header />
 
       <section id="top" className="hero motion-safe:animate-[hero-rise_.8s_ease-out_both]">
-        <div className="cloud cloudOne" />
-        <div className="cloud cloudTwo" />
+        <video
+          className="heroVideo"
+          src="https://res.cloudinary.com/dzn1k1z8r/video/upload/v1790372625/ATG_Cover_bhsdit.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+        />
         <div className="heroCopy">
-          {/* <p className="eyebrow">A Thousand Generation</p> */}
           <h1><span>Light in a<br/>dark world.</span></h1>
           <div className="goldRule" />
           <p className="heroLead">Honouring lives. Sharing kindness. Connecting generations.</p>
@@ -32,13 +39,6 @@ export default function HomePage() {
             <a className="textLink transition-colors duration-300 hover:text-[#9b7625]" href="/about">Discover ATG <span>→</span></a>
           </div>
         </div>
-
-        <div className="heroImageWrap shadow-2xl shadow-black/10 transition-transform duration-700 hover:scale-[1.015]">
-          <img className="heroImage uploadedImage" src="https://res.cloudinary.com/dzn1k1z8r/image/upload/v1786576898/ATG_Art_Therapy_kaukkk.svg" alt="ATG outreach moment" />
-          <div className="imageFallback heroFallback" aria-hidden="true"/>
-          <div className="imageCaption"> Dignity, always.</div>
-        </div>
-        <div className="heroIndex">ATG / 001</div>
       </section>
 
       <section id="about" className="storyIntro sectionPad motion-safe:animate-[hero-rise_.8s_ease-out_.15s_both]">
